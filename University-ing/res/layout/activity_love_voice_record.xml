@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="top" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/title_lovevoice"
+        android:textColor="#502c4f"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <ImageView 
+        android:id="@+id/recordimage"
+        android:layout_below="@id/textView1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:layout_width="210dp"
+        android:layout_height="140dp" 
+        android:background="@drawable/voice3"
+        />
+    <TextView
+        android:id="@+id/recordstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recordimage"
+        android:layout_marginTop="10dp"
+        android:textColor="#502c4f"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/recordname"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20sp" >
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/record"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-5dp"
+        android:contentDescription="@string/description_imagebutton_voicerecord"
+        android:layout_marginBottom="90dp" />
+
+    <ImageButton
+        android:id="@+id/cancelactivity"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/record"
+        android:background="@drawable/voicecancel"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我们恋爱吧</string>
+    <string name="menu_settings">我们恋爱吧</string>
+    <string name="title_activity_main">我们恋爱吧</string>
+    <string name="title_activity_love_voice">我们恋爱吧</string>
+    <string name="title_activity_love_voice_record">声音录制</string>
+    <string name="title_lovevoice">我们的音频名：</string>
+    <string name="description_imagebutton_voicerecord">用于录制音频的按钮</string>
+    <string name="title_activity_love_voice_group">Love音乐工厂</string>
+    <string name="title_activity_love_camera">Love相机</string>
+    <string name="title_activity_love_calendar">Love日历</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_love_voice_play">LoveVoicePlay</string>
+    <string name="title_activity_love_take_photo">LoveTakePhoto</string>
+    <string name="title_activity_love_preview">LovePreview</string>
+    <string name="title_activity_version">V1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_aboutus">
+                        主要开发者：LC舞枫\n\n
+                        参与开发：桂亚洲、赵传瑞\n\n
+        UI设计：LC舞枫\n\n
+                        特别感谢：Basil Wang，魏小兴，陌生旅客\n\n
+                         交流邮箱：lenggujian@qq.com\n\n
+        PS:以此软件送给我最爱的韩雪，希望我们都能找到自己喜欢的工作！\n\n
+        \t\t最后感谢大家的支持！
+    </string>
+
+</resources>

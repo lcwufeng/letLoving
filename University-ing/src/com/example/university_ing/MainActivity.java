@@ -90,6 +90,7 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void onClick(View v) {
+				//调用系统相机
 				openImageCamera();
 			}
 		});
@@ -213,7 +214,7 @@ public class MainActivity extends Activity {
 					@Override
 					public void onClick(DialogInterface dialog, int which) {
 						// 创建一个位于SD卡上的文件
-						if (photoName.getText().toString() == ""
+						/*if (photoName.getText().toString() == ""
 								|| photoName.getText().toString() == "未命名图片") {
 							Toast.makeText(MainActivity.this, "请输入图片名称！",
 									Toast.LENGTH_LONG).show();
@@ -227,6 +228,32 @@ public class MainActivity extends Activity {
 									+ photoName.getText().toString()
 									+ "','"
 									+ mFile.getAbsolutePath() + "')";
+							lovedb.execSQL(insertData);*/
+						// 创建一个位于SD卡上的文件
+						String path = null;
+						if (photoName.getText().toString() == ""
+								|| photoName.getText().toString() == "未命名图片") {
+							Toast.makeText(MainActivity.this, "请输入图片名称！",
+									Toast.LENGTH_LONG).show();
+						} else {
+							try {
+								mFile.renameTo(new File(getPicFile()
+										.getAbsolutePath()
+										+ "/"
+										+ photoName.getText().toString().trim()
+										+ ".jpg"));
+								path = Environment
+										.getExternalStorageDirectory()
+										.getCanonicalFile()
+										+ "/universiting/Camera/"
+										+ photoName.getText().toString()
+										+ ".jpg";
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							String insertData = "insert into love_table (filename,filepath) values ('"
+									+ photoName.getText().toString() + "','" + path + "')";
 							lovedb.execSQL(insertData);
 
 							Toast.makeText(MainActivity.this, "已保存在SD卡了哦~亲……",
